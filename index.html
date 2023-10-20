@@ -38,20 +38,39 @@
         }
 
         .container-fluid {
-            
+            margin: 0 auto;
             max-width: 1000px;
-             margin-top: auto;
-            margin-bottom: auto;
-            margin-left: auto;
-             margin-right: 250px;
-            
-            box-shadow: 0px 2px 7px 10px rgb(213, 146, 226);
-            border-radius: 10px;
-            
-             text-align: left;
+            text-align: left;
+        }
+        .main-container{
             display: flex;
             justify-content: space-between;
-            /* Separate into two columns */
+            box-shadow: 0px 0px 10px 10px rgb(213, 146, 226);
+            border-radius: 10px;  
+        }
+        @media screen (max-width: 768px;)
+        {
+            .main-container{
+                flex-direction: column;
+            }
+            .left-column{
+                width: 100%;
+            }
+            .right-column{
+                width: 100%;
+            }
+        }
+        @media screen (max-width: 488px;)
+        {
+            .main-container{
+                flex-direction: column;
+            }
+            .left-column{
+                width: 100%;
+            }
+            .right-column{
+                width: 100%;
+            }
         }
 
         .left-column,
@@ -134,8 +153,9 @@
     <canvas id="bgcanvas"></canvas>
     <script src="script.js"></script>
     <div class="container-fluid">
-        <div class="left-column">
-            <section class="section">
+        <div class="main-container">
+            <div class="left-column">
+                <section class="section">
                 <h1>Teekhatat Srisophon</h1>
                 <h1>Instrument & Control Engineering</h1>
 
@@ -171,7 +191,7 @@
 
                 </section>
             </section>
-
+            
         </div>
 
         <div class="right-column">
@@ -210,8 +230,8 @@
 
 
             </section>
-
-
+        </div>
+        </div>
         </div>
     </div>
     <audio autoplay>

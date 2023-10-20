@@ -72,10 +72,36 @@
                 width: 100%;
             }
         }
+        @media screen (max-width: 320px; ) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .left-column {
+                width: 100%;
+            }
+
+            .right-column {
+                width: 100%;
+            }
+        }
+        @media screen (max-width: 300px; ) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .left-column {
+                width: 100%;
+            }
+
+            .right-column {
+                width: 100%;
+            }
+        }
 
         .left-column,
         .right-column {
-            flex: 0 10 50%;
+            flex: 0 0 50%;
             /* Adjust the width of the columns and prevent them from growing */
         }
 

@@ -16,7 +16,8 @@
             padding: 20px;
             background-image: url('img/bg10.gif');
             background-size: cover;
-            
+            background-repeat: no-repeat;
+            background-attachment:fixed;
             display: flex;
             justify-content: center;
             /* Center the content horizontally */
@@ -121,24 +122,12 @@
 
             margin-bottom: 5%;
         }
-
-        #container {
-
-            width: 200px;
-            height: 200px;
-            margin: auto;
-            transform: rotate(45deg);
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-
-        }
     </style>
 </head>
 
 <body>
-
+    <canvas id="bgcanvas"></canvas>
+    <script src="script.js"></script>
     <div class="resume">
         <div class="left-column">
             <section class="section">
